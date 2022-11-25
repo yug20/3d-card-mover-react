@@ -1,0 +1,40 @@
+h1, p {
+  font-family: Lato;
+}
+
+body {
+   background: #402020;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Container needs perspective */
+  perspective: 1000px;
+}
+
+.card {
+  width: 220px;
+  height: 340px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: #503030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  box-shadow:0 2px 20px rgba(0,0,0,0.5);
+}
+
+.card * {
+  pointer-events: none;
+}
+
+.text {
+  color: #fff
+}
